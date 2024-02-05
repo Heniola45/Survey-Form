@@ -6,60 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale-1.0" />
     <link rel="stylesheet" href="SurveyForm.css"/>
   </head>
+
   <body>
-    <h1 id="title">me_luxe Survey Form</h1>
+    <div id="heading">
+      <h1 id="title">Me_luxe Survey Form</h1>
     <p id="description">
       Thank you for taking the time to help us improve the platform
     </p>
-    <form id="survey-form">
-      <fieldset>
-        <label id="name-label"
-          >Name<br /><input
-            id="name"
-            type="text"
-            placeholder="Enter your name"
-            required /></label
-        ><br /><br />
-        <label id="email-label"
-          >Email <br />
-          <input
-            id="email"
-            type="email"
-            placeholder="Enter your email"
-            required />
-        </label><br /><br />
-        <label id="number-label"
-          >Number<br />
-          <input id="number" type="number" placeholder="Enter your number"
-          min="0" max="2" required>
-          <br /><br />
-        <label
-          >Which option best describes your current role?
-          <select id="dropdown">
-            <option>Select one</option>
-            <option>Undergraduate</option>
-            <option>Graduate</option>
-          </select> </label
-        ><br /><br />
-        <label
-          >Would you recommend freeCodeCamp to a friend?<br />
-          <input type="radio" value="recommend" name="radiobutton" /> No<br />
-          <input type="radio" value="freecodecamp" name="radiobutton" /> Yes
-          <br /><br />
-        </label>
-        <label
-          >What would you like to see improved? (Check all that apply)<br />
-          <input type="checkbox" value="improve" /> Vidoes<br />
-          <input type="checkbox" value="image" /> Images<br />
-          <input type="checkbox" value="media" /> Social media platform<br />
-          <input type="checkbox" value="city" /> City meetups </label
-        ><br /><br />
-        <label
-          >Any comments or suggestions?
-          <textarea>additional comments here...</textarea></label
-        ><br /><br />
-        <button id="submit">Submit</button>
-      </fieldset>
-    </form>
+    </div>
+
+    <div id="main">
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label"><br>Name:</br></label>
+          <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+          <br>
+          <label id="email-label"><br>Email:</br></label>
+          <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+          <br>
+          <label id="number-label"><br>Age:</br></label>
+          <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+"> 
+   
+          <label>Which option best describes your current role?</label><br /><br />
+          <select id="dropdown" name="code-lang" class="form">
+              <option>Select one</option>
+              <option>Undergraduate</option>
+              <option>Graduate</option>
+            </select><br /><br />
+
+          <label>Would you recommend freeCodeCamp to a friend?<br />
+            <input type="radio" value="recommend" name="radiobutton" /> No<br />
+            <input type="radio" value="freecodecamp" name="radiobutton" /> Yes
+            <br /><br />
+          </label>
+          <label
+            >What would you like to see improved? (Check all that apply)<br />
+            <input type="checkbox" value="improve" /> Vidoes<br />
+            <input type="checkbox" value="image" /> Images<br />
+            <input type="checkbox" value="media" /> Social media platform<br />
+            <input type="checkbox" value="city" /> City meetups </label
+          ><br /><br />
+          
+          <div id="ending"><br><br>
+            <label id="comments-label">Do you have any comments or suggestions?</label><br>
+            <textarea style= height:120px; class="form" placeholder="Please feel free to add additional comments here......"></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    
   </body>
 </html>
